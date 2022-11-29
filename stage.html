@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    
+    <title> Document Model Object</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+          <h1>Liste des apprenants</h1>
+            
+        </div>
+      </nav>
+    <div class="conteneur">
+        <form action="" id="form" onsubmit="event.preventDefault()">
+            <label for="name" class="labelClass">Nom</label>
+            <input type="text" id="name" class="inputClass" required><br>
+            <label for="post" class="labelClass">Post nom</label>
+            <input type="text" id="post" class="inputClass" required><br>
+            <label for="prenom" class="labelClass">Prenom</label>
+            <input type="text" id="prenom" class="inputClass" required><br>
+            <label for="pays" class="labelClass">Pays</label>
+            <input type="text" id="pays" class="inputClass" required><br>
+            <label for="genre" class="labelClass">genre</label><br>
+            <select class="inputClass" name="genre" required>
+                <option>Masculin</option>
+                <option>Féminin</option>
+            </select><br>
+            <label for="git" class="labelClass">GitHub</label>
+            <input type="text" id="git" class="inputClass" required><br>
+            <input type="submit" value="Ajouter" class="inputClass" id="button" style="width: 11vw; margin-left: 3px;">
+        </form>
+        <table class="table-primary">
+            <thead class="table-primary">
+                <tr class="table-primary">
+                    <td class="table-primary">Nom</td>
+                    <td class="table-primary">Post Nom</td>
+                    <td class="table-primary">Prenom</td>
+                    <td class="table-primary">Pays</td>
+                    <td class="table-primary">Genre</td>
+                    <td class="table-primary">GitHub</td>
+                </tr>
+            </thead>
+            <tbody class="table-primary">
+
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="stage.js"></script>
+</body>
+</html>
+<style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-top: -45%;
+            margin-left: 25%;
+            position: absolute;
+        }
+        td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .containeur{
+            position: relative;
+        }
+        form{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 20px;
+        }
+        .inputClass{
+            margin: 2px 1px;
+            padding: 7px 7px;
+            display: flex;
+            flex-direction: column;
+            width: 10vw;
+            
+        }
+        .inputRadio{
+            margin: 2px 1px;
+            padding: 7px 7px;
+            display: flex;
+            width: 10vw;
+        }
+        .inputRadio{
+            top: -5px;
+        }
+        form{
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 5px 5px 5px 5px;
+            padding: 5px 5px;
+        }
+        form:hover{
+            border: 5px solid white;
+            box-shadow: 5px 5px 5px 5px rgb(109, 105, 105);
+        }
+
+        .container{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-size: 40px;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          left: 40%;
+          color: white;
+        }
+</style>
