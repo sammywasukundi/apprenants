@@ -15,14 +15,14 @@ editModeEnabled(editMode);
 
 
 let identites = [
-    // {
-    //     'nom': "Mumbere",
-    //     'postnom' : "Wasukundi",
-    //     'prenom' : "Sammy",
-    //     'pays' : "congo",
-    //     'github': "github/sammy",
-    //     'genre': "M"
-    // }
+    {
+        'nom': "Mumbere",
+        'postnom' : "Wasukundi",
+        'prenom' : "Sammy",
+        'pays' : "congo",
+        'github': "https://github.com/sammywasukundi",
+        'genre': "M"
+    }
 
 ]
 
@@ -41,10 +41,10 @@ function loadTasksInTable() {
         <td> ${identite.github}</td>
 
         <td>
-        <button class='btn' data-nom="${identite.nom}" data-postnom="${identite.postnom}" data-prenom="${identite.prenom}" 
+        <button class="btn btn-outline-dark" data-nom="${identite.nom}" data-postnom="${identite.postnom}" data-prenom="${identite.prenom}" 
         data-pays="${identite.pays}" data-genre="${identite.genre}" data-github="${identite.github}" 
         onclick= "editIdentite(this)"> Modifier</button>
-        <button class='btn1' onclick="deleteIdentite(this, ${identites.indexOf(identite)}); confirmer()"> Supprimer</button>
+        <button class="btn btn-outline-dark" onclick="deleteIdentite(this, ${identites.indexOf(identite)}); confirmer()"> Supprimer</button>
         </td>
         </tr>`
 
